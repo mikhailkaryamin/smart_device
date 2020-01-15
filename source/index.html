@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,225 @@
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Привет</h1>
+  <header class="page-header">
+    <img src="/img" alt="Логотип smart device" class="page-header__logo">
+    <nav class="main-nav">
+      <ul class="main-nav__item navigation-site-list">
+        <li class="navigation-site-list__item"></li>
+        <li class="navigation-site-list__item"></li>
+        <li class="navigation-site-list__item"></li>
+        <li class="navigation-site-list__item"></li>
+      </ul>
+      <ul class="main-nav__item contacts">
+        <li class="contatcs__item"></li>
+        <li class="contatcs__item"></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">
+      smart device
+    </h1>
+    <section class="printed-boards">
+      <h2 class="printed-boards__headline">
+        Печатные платы
+      </h2>
+      <p class="printed-boards__description">
+        производство и монтаж, поставка комплектующих, блоков и модулей
+      </p>
+      <button class="printed-boards__button">
+        Бесплатная консультация
+      </button>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <strong class="advantages__headline-item">
+            Оперативные сроки
+          </strong>
+          <p class="advantages__description-item">
+            Усовершенствованная логистическая система позволяет нам просчитывать
+            стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
+          </p>
+        </li>
+        <li class="advantages__item">
+          <strong class="advantages__headline-item">
+            Крупные поставщики
+          </strong>
+          <p class="advantages__description-item">
+            Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <strong class="advantages__headline-item">
+            Полная конфиденциальность
+          </strong>
+          <p class="advantages__description-item">
+            По желанию клиента мы обеспечиваем полную конфеденциальность.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <strong class="advantages__headline-item">
+            Персонализация стоимости
+          </strong>
+          <p class="advantages__description-item">
+            Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+            устраивает.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__headline">
+        О компании
+      </h2>
+      <p class="about-us__description">
+        Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+        года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+      </p>
+      <p class="about-us__description">
+        Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..
+      </p>
+      <button class="about-us__button">
+        Подробнее
+      </button>
+    </section>
+    <section class="services">
+      <h2 class="visually-hidden">Наши услуги</h2>
+      <b class="services__label">
+        Service Device предлагает следующие товары и услуги
+      </b>
+      <ul class="services__list">
+        <li class="services__item">
+          Производство печатных плат
+          <a class="services__item-link">
+          </a>
+        </li>
+        <li class="services__item">
+          Монтаж печатных плат
+          <a class="services__item-link">
+          </a>
+        </li>
+        <li class="services__item">
+          Комплектующие для светотехники
+          <a class="services__item-link">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <b class="feedback__question">
+        Остались вопросы? Задайте их нам!
+      </b>
+      <span class="feedback__text">
+        Мы проконсультируем Вас бесплатно
+      </span>
+      <form method="GET" class="feedback__form">
+        <label class="feedback__item feedback__item--name">
+          <input type="text" name="name" class="feedback__input feedback__input--name">
+        </label>
+        <label class="feedback__item feedback__item--number">
+          <input type="number" name="number" class="feedback__input feedback__input--number">
+        </label>
+        <label class="feedback__item feedback__item--textarea">
+          <textarea name="question" class="feedback__textarea"></textarea>
+        </label>
+        <button class="feedback__item feedback__item--button">
+          Задать вопрос
+        </button>
+        <label class="feedback__item feedback__item--checkbox">
+          Я согласен на обработку персональных данных
+          <input type="checkbox" class="feedback__checkbox" name="personal data processing" checked required>
+        </label>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="" class="footer__logo">
+      <img src="#" alt="Smart device логотип" class="footer__logo-img">
+    </a>
+    <p class="footer__copyrigth">
+      1999-2018 SD Service Devices
+    </p>
+    <ul class="footer__social-list socials">
+      <li class="socials__item">
+        <a href="https://facebook.com" class="social__link">
+          <span class="visually-hidden">
+            facebook
+          </span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="https://ok.ru" class="social__link">
+          <span class="visually-hidden">
+            ok
+          </span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="https://vk.com" class="social__link">
+          <span class="visually-hidden">
+            vk
+          </span>
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__navigation-list">
+      <li class="footer__navigation-item">
+        О компании
+      </li>
+      <li class="footer__navigation-item">
+        Продукты
+      </li>
+      <li class="footer__navigation-item">
+        Производство печатных плат
+      </li>
+      <li class="footer__navigation-item">
+        Монтаж печатных плат
+      </li>
+      <li class="footer__navigation-item">
+        Комплектующие
+      </li>
+      <li class="footer__navigation-item">
+        Доставка
+      </li>
+      <li class="footer__navigation-item">
+        Контакты
+      </li>
+    </ul>
+    <div class="contacts">
+      <b class="contacts__text">
+        Наш офис
+      </b>
+      <ul class="contacts__list">
+        <li class="contacts__item"></li>
+        <li class="contacts__item"></li>
+        <li class="contacts__item"></li>
+        <li class="contacts__item"></li>
+      </ul>
+    </div>
+    <div class="information">
+      <ul class="information__links">
+        <li class="information__item">
+          <a class="infromation__condition">
+            Условия конфиденциальности
+          </a>
+        </li>
+        <li class="information__item">
+          <a class="infromation__developed-by">
+            Developed by wow studio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
+
 </html>
