@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  margin: 0;
+  padding-left: 27px;
+  list-style: none;
+}
+
+.contatcs__item {
+  margin-right: 23px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+

@@ -10,35 +10,55 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
-    <img src="/img" alt="Логотип smart device" class="page-header__logo">
-    <nav class="main-nav">
-      <ul class="main-nav__item navigation-site-list">
-        <li class="navigation-site-list__item"></li>
-        <li class="navigation-site-list__item"></li>
-        <li class="navigation-site-list__item"></li>
-        <li class="navigation-site-list__item"></li>
-      </ul>
-      <ul class="main-nav__item contacts">
-        <li class="contatcs__item"></li>
-        <li class="contatcs__item"></li>
-      </ul>
-    </nav>
+    <div class="page-header__container">
+      <img src="/img/page-header__logo.svg" width="38" height="38" alt="Логотип smart device" class="page-header__logo">
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__item site-list">
+        </ul>
+        <ul class="main-nav__item contacts">
+          <li class="contatcs__item">
+            <a class="contacts__link">
+              <svg class="contacts__mail" width="26" height="19">
+                <use xlink:href="/img/sprite.svg#contacts-mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contatcs__item">
+            <a class="contacts__link">
+              <svg class="contacts__phone" width="24" height="24">
+                <use xlink:href="/img/sprite.svg#contacts-phone"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <h1 class="visually-hidden">
       smart device
     </h1>
     <section class="printed-boards">
-      <h2 class="printed-boards__headline">
-        Печатные платы
-      </h2>
-      <p class="printed-boards__description">
-        производство и монтаж, поставка комплектующих, блоков и модулей
-      </p>
-      <button class="printed-boards__button">
-        Бесплатная консультация
-      </button>
+      <div class="printed-boards__container">
+        <h2 class="printed-boards__headline">
+          Печатные платы
+        </h2>
+        <p class="printed-boards__description">
+          производство и монтаж, поставка комплектующих, блоков и модулей
+        </p>
+        <button class="printed-boards__button">
+          Бесплатная консультация
+        </button>
+      </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>

@@ -1,0 +1,21 @@
+.page-header {
+  background-color: #1b2931;
+}
+
+.page-header__container {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start;
+  width: 320px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.page-header__logo {
+  flex: 0;
+  width: 38px;
+}
