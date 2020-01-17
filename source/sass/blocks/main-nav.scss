@@ -1,0 +1,25 @@
+.main-nav {
+  display: flex;
+  width: 150px;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 37px;
+  height: 17px;
+  border: none;
+  background: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 1px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 0 0 #ffffff;
+  }
+}

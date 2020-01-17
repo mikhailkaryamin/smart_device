@@ -374,4 +374,122 @@ a {
   color: #666666;
   text-decoration: none; }
 
+.page-header {
+  background-color: #1b2931; }
+
+.page-header__container {
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 320px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.page-header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  width: 38px; }
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  margin-left: auto;
+  padding-top: 10px; }
+
+.main-nav__toggle {
+  position: relative;
+  width: 37px;
+  height: 17px;
+  border: none;
+  background: transparent; }
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 1px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 15px 0 0 #ffffff;
+            box-shadow: 0 15px 0 0 #ffffff; }
+
+.site-list {
+  display: none; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 27px;
+  list-style: none; }
+
+.contatcs__item {
+  margin-right: 23px; }
+  .contatcs__item:nth-child(2n) {
+    margin-right: 0; }
+
+.printed-boards {
+  position: relative;
+  z-index: 50;
+  min-height: 527px;
+  background-color: #1b2931; }
+  .printed-boards::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 647px;
+    background-image: url("../img/printed-boards-bg-mobile.jpg");
+    overflow: hidden;
+    background-position: center; }
+
+.printed-boards__container {
+  position: relative;
+  z-index: 100;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 206px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  .printed-boards__container::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -8px;
+    z-index: 150;
+    width: 301px;
+    height: 220px;
+    background-image: url("../img/printed-boards-board-mobile.png");
+    overflow: hidden; }
+
+.printed-boards__headline {
+  position: relative;
+  z-index: 150;
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase; }
+
+.printed-boards__description {
+  padding-left: 48px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 25px; }
+
 /*# sourceMappingURL=style.css.map */

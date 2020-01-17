@@ -1,0 +1,59 @@
+.printed-boards {
+  position: relative;
+  z-index: 50;
+  min-height: 527px;
+  background-color: #1b2931;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 647px;
+    background-image: url("../img/printed-boards-bg-mobile.jpg");
+    overflow: hidden;
+    background-position: center;
+  }
+}
+
+.printed-boards__container {
+  position: relative;
+  z-index: 100;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 206px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -8px;
+    z-index: 150;
+    width: 301px;
+    height: 220px;
+    background-image: url("../img/printed-boards-board-mobile.png");
+    overflow: hidden;
+  }
+}
+
+.printed-boards__headline {
+  position: relative;
+  z-index: 150;
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.printed-boards__description {
+  padding-left: 48px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 25px;
+}
