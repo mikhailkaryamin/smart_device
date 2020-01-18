@@ -1,0 +1,12 @@
+.input {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  border: none;
+  background-color: #19baff;
+
+  @include placeholder {
+    color: #ffffff;
+  }
+}

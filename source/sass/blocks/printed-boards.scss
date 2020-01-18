@@ -1,7 +1,7 @@
 .printed-boards {
   position: relative;
   z-index: 50;
-  min-height: 527px;
+  min-height: 567px;
   background-color: #1b2931;
 
   &::before {
@@ -24,13 +24,15 @@
   margin: 0 auto;
   padding-top: 206px;
   padding-right: 15px;
+  padding-bottom: 70px;
   padding-left: 15px;
+  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     top: 12px;
-    right: -8px;
+    right: 5px;
     z-index: 150;
     width: 301px;
     height: 220px;
@@ -51,9 +53,34 @@
 }
 
 .printed-boards__description {
+  position: relative;
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 42px;
   padding-left: 48px;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", monospace;
   color: #ffffff;
   font-weight: 400;
   line-height: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 33px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+}
+
+.printed-boards__button {
+  padding-top: 17px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  color: #ffffff;
+  border-color: #000000;
+  background-color: #00b2ff;
 }
