@@ -13,3 +13,17 @@
   }
 }
 
+.contacts__link {
+  display: block;
+
+  &--mail {
+    width: 26px;
+    height: 19px;
+  }
+
+  &--phone {
+    width: 24px;
+    height: 24px;
+  }
+}
+

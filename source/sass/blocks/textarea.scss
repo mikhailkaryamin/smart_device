@@ -1,0 +1,12 @@
+.textarea {
+  width: 100%;
+  min-height: 104px;
+  padding-top: 17px;
+  padding-left: 17px;
+  border: none;
+  background-color: #19baff;
+
+  @include placeholder {
+    color: #ffffff;
+  }
+}
