@@ -20,3 +20,10 @@
 .checkbox__input:checked + .checkbox__item {
   background-image: url("../img/checkbox-tick.png");
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

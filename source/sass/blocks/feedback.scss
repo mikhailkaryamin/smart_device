@@ -46,3 +46,44 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .feedback__container {
+    width: 770px;
+    padding-top: 83px;
+    padding-left: 88px;
+  }
+
+  .feedback__question {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .feedback__text {
+    margin-bottom: 50px;
+  }
+
+  .feedback__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback__item {
+    &--name,
+    &--number {
+      width: 280px;
+    }
+
+    &--name {
+      margin-right: 32px;
+    }
+
+    &--textarea {
+      width: 590px;
+    }
+
+    &--button {
+      margin-right: 39px;
+    }
+  }
+}
