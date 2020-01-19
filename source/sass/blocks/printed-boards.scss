@@ -12,14 +12,31 @@
     width: 100%;
     height: 647px;
     background-image: url("../img/printed-boards-bg-mobile.jpg");
-    overflow: hidden;
     background-position: center;
   }
 }
 
+.printed-boards__bg {
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 133px);
+    width: 301px;
+    height: 220px;
+    background-image: url("../img/printed-board-mobile.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .printed-boards__container {
-  position: relative;
-  z-index: 100;
   width: 320px;
   margin: 0 auto;
   padding-top: 206px;
@@ -27,18 +44,6 @@
   padding-bottom: 70px;
   padding-left: 15px;
   overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: 5px;
-    z-index: 150;
-    width: 301px;
-    height: 220px;
-    background-image: url("../img/printed-boards-board-mobile.png");
-    overflow: hidden;
-  }
 }
 
 .printed-boards__headline {
@@ -76,6 +81,7 @@
 }
 
 .printed-boards__button {
+  position: relative;
   padding-top: 17px;
   padding-right: 30px;
   padding-bottom: 14px;
@@ -83,4 +89,50 @@
   color: #ffffff;
   border-color: #000000;
   background-color: #00b2ff;
+}
+
+@media (min-width: $tablet-width) {
+  .printed-boards {
+    min-height: 607px;
+
+    &::before {
+      height: 686px;
+      background-image: url("../img/printed-boards-bg-tablet.jpg");
+    }
+  }
+
+  .printed-boards__bg {
+    top: 35px;
+    height: 340px;
+
+    &::before {
+      left: calc(50% + 106px);
+      width: 465px;
+      height: 340px;
+      background-image: url("../img/printed-board-tablet.png");
+    }
+  }
+
+  .printed-boards__container {
+    width: 770px;
+    padding-top: 118px;
+    padding-left: 88px;
+  }
+
+  .printed-boards__headline {
+    width: 470px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .printed-boards__description {
+    width: 405px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .printed-boards__button {
+    margin-left: 48px;
+    border: none;
+  }
 }

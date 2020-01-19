@@ -30,3 +30,42 @@
   border-color: #00b2ff;
   background: transparent;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__container {
+    position: relative;
+    width: 770px;
+    min-height: 370px;
+    padding-left: 213px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 252px;
+      height: 362px;
+      background-image: url("../img/about-us__year.png");
+    }
+  }
+
+  .about-us__headline {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-us__description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about-us__button {
+    margin-top: 30px;
+    padding-top: 14px;
+    padding-right: 50px;
+    padding-bottom: 14px;
+    padding-left: 50px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

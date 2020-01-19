@@ -29,7 +29,6 @@
 .services__item {
   display: flex;
   flex-direction: column;
-  width: 290px;
   min-height: 256px;
   margin-bottom: 30px;
   padding-top: 23px;
@@ -39,15 +38,15 @@
   line-height: 30px;
 
   &--production {
-    background-image: url("../img/services__production.jpg");
+    background-image: url("../img/services__production-mobile.jpg");
   }
 
   &--mounting {
-    background-image: url("../img/services__mounting.jpg");
+    background-image: url("../img/services__mounting-mobile.jpg");
   }
 
   &--component-parts {
-    background-image: url("../img/services__component-parts.jpg");
+    background-image: url("../img/services__component-parts-mobile.jpg");
   }
 
   &:last-child {
@@ -78,5 +77,39 @@
     width: 6px;
     height: 9px;
     background-image: url("../img/arrow.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .services__container {
+    width: 770px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .services__label {
+    width: 615px;
+    margin-bottom: 46px;
+    padding-left: 0;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .services__item {
+    margin-bottom: 46px;
+    padding-top: 43px;
+    padding-left: 44px;
+
+    &--production {
+      background-image: url("../img/services__production-tablet.jpg");
+    }
+
+    &--mounting {
+      background-image: url("../img/services__mounting-tablet.jpg");
+    }
+
+    &--component-parts {
+      background-image: url("../img/services__component-parts-tablet.jpg");
+    }
   }
 }

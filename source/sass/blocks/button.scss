@@ -7,3 +7,17 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.button__invis-mobile {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .button__invis-mobile {
+    display: inline-block;
+  }
+
+  .button__mobile {
+    display: none;
+  }
+}

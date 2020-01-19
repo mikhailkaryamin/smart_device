@@ -13,29 +13,14 @@
   padding-bottom: 54px;
 }
 
-.footer__logo {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.footer__company-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 16px;
-}
-
-.footer__company-name {
-  color: #203c42;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-}
-
-.footer__slogan {
-  color: #788891;
-  font-size: 12px;
-  line-height: 14px;
+.footer__copyrigth {
+  font-family: "PT Mono", monospace;
+  color: #1b2d37;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
 }
 
 .footer__item-container {
@@ -100,8 +85,11 @@
 
 .footer__item {
   margin-bottom: 5px;
+  font-family: "PT Mono", monospace;
+  color: #1b2d37;
   font-size: 15px;
   line-height: 25px;
+  opacity: 0.5;
 
   &:last-child {
     margin-bottom: 0;
@@ -114,4 +102,82 @@
 
 .footer__condition {
   margin-bottom: 25px;
+}
+
+.footer__condition,
+.footer__developed-by {
+  font-family: "PT Mono", monospace;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 770px;
+    padding-right: 24px;
+    padding-left: 25px;
+  }
+
+  .footer__copyrigth-container {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -25px;
+      display: block;
+      width: 770px;
+      height: 1px;
+      background-color: #dcdddc;
+    }
+  }
+
+  .footer__item-container {
+    margin: 0;
+    padding-left: 0;
+    border: none;
+
+    &--site-list {
+      width: 50%;
+    }
+
+    &--contacts {
+      width: 50%;
+    }
+
+    &--information {
+      position: relative;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -25px;
+        width: 770px;
+        height: 1px;
+        background-color: #dcdddc;
+      }
+    }
+  }
+
+  .footer__item-headline {
+    &::before {
+      display: none;
+    }
+  }
+
+  .footer__condition {
+    margin-bottom: 0;
+  }
 }

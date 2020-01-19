@@ -2,11 +2,19 @@
   width: 100%;
   min-height: 104px;
   padding-top: 17px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   padding-left: 17px;
   border: none;
   background-color: #19baff;
 
   @include placeholder {
     color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    min-height: 160px;
   }
 }

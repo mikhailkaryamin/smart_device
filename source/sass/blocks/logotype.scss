@@ -1,0 +1,42 @@
+.logotype {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logotype__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.logotype__company-name {
+  color: #203c42;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.logotype__slogan {
+  color: #788891;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .logotype__container {
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .logotype__company-name {
+    &--main {
+      color: #ffffff;
+    }
+  }
+}

@@ -16,6 +16,15 @@
 }
 
 .page-header__logo {
-  flex: 0;
   width: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    width: 770px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+  }
 }
