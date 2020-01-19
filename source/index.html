@@ -172,7 +172,8 @@
             Задать вопрос
           </button>
           <label class="feedback__item feedback__item--checkbox checkbox">
-            <input type="checkbox" class="visually-hidden checkbox__input" name="personal data processing" checked required>
+            <input type="checkbox" class="visually-hidden checkbox__input" name="personal data processing" checked
+              required>
             <span class="checkbox__item"></span>
             Я согласен на обработку персональных данных
           </label>
@@ -182,82 +183,123 @@
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <a href="" class="footer__logo">
-        <img src="/img/page-header__logo.svg" width="52" height="52" alt="Smart device логотип" class="footer__logo-img">
-      </a>
-      <p class="footer__copyrigth">
-        1999-2018 SD Service Devices
-      </p>
-      <ul class="footer__social-list socials">
-        <li class="socials__item">
-          <a href="https://facebook.com" class="social__link">
-            <span class="visually-hidden">
-              facebook
+      <div class="footer__copyrigth-container">
+        <a href="" class="footer__logo">
+          <img src="/img/page-header__logo.svg" width="52" height="52" alt="Smart device логотип"
+            class="footer__logo-img">
+          <span class="footer__company-container">
+            <span class="footer__company-name">
+              Service Device
             </span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="https://ok.ru" class="social__link">
-            <span class="visually-hidden">
-              ok
+            <span class="footer__slogan">
+              умные технологии
             </span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="https://vk.com" class="social__link">
-            <span class="visually-hidden">
-              vk
-            </span>
-          </a>
-        </li>
-      </ul>
-      <ul class="footer__navigation-list">
-        <li class="footer__navigation-item">
-          О компании
-        </li>
-        <li class="footer__navigation-item">
-          Продукты
-        </li>
-        <li class="footer__navigation-item">
-          Производство печатных плат
-        </li>
-        <li class="footer__navigation-item">
-          Монтаж печатных плат
-        </li>
-        <li class="footer__navigation-item">
-          Комплектующие
-        </li>
-        <li class="footer__navigation-item">
-          Доставка
-        </li>
-        <li class="footer__navigation-item">
-          Контакты
-        </li>
-      </ul>
-      <div class="contacts">
-        <b class="contacts__text">
-          Наш офис
-        </b>
-        <ul class="contacts__list">
-          <li class="contacts__item"></li>
-          <li class="contacts__item"></li>
-          <li class="contacts__item"></li>
-          <li class="contacts__item"></li>
+          </span>
+        </a>
+        <p class="footer__copyrigth">
+          1999-2018 SD Service Devices
+        </p>
+        <ul class="footer__social-list social">
+          <li class="socials__item">
+            <a href="https://facebook.com" class="social__link">
+              <svg class="social__fb" width="27" height="27">
+                <use xlink:href="/img/sprite.svg#social__fb"></use>
+              </svg>
+              <span class="visually-hidden">
+                facebook
+              </span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://ok.ru" class="social__link">
+              <svg class="social__ok" width="27" height="26">
+                <use xlink:href="/img/sprite.svg#social__ok"></use>
+              </svg>
+              <span class="visually-hidden">
+                ok
+              </span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://vk.com" class="social__link">
+              <svg class="social__vk" width="27" height="26">
+                <use xlink:href="/img/sprite.svg#social__vk"></use>
+              </svg>
+              <span class="visually-hidden">
+                vk
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="information">
-        <ul class="information__links">
-          <li class="information__item">
-            <a class="infromation__condition">
-              Условия конфиденциальности
+      <div class="footer__item-container">
+        <b class="footer__item-headline footer__item-open">
+          Разделы сайта
+        </b>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link">
+              О компании
             </a>
           </li>
-          <li class="information__item">
-            <a class="infromation__developed-by">
-              Developed by wow studio
+          <li class="footer__item">
+            <a class="footer__link">
+              Продукты
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              Производство печатных плат
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              Монтаж печатных плат
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              Комплектующие
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              Доставка
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link">
+              Контакты
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer__item-container">
+        <b class="footer__item-headline footer__item-open">
+          Наш офис
+        </b>
+        <ul class="footer__list">
+          <li class="footer__item">
+            г. Мытищи, Олимпийский <br> проспект, д.10
+          </li>
+          <li class="footer__item">
+            +7 (495) 589-40-50
+          </li>
+          <li class="footer__item">
+            +7 (925) 003-87-67
+          </li>
+          <li class="footer__item">
+            +7 (926) 926-080-79
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item-container footer__item-container--information">
+        <a class="footer__condition">
+          Условия конфиденциальности
+        </a>
+        <a class="footer__developed-by">
+          Developed by wow studio
+        </a>
       </div>
     </div>
   </footer>
