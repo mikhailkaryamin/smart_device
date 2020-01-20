@@ -42,6 +42,12 @@
     background-color: #00b2ff;
   }
 
+  &--checkbox {
+    font-family: "PT Mono", monospace;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -84,6 +90,51 @@
 
     &--button {
       margin-right: 39px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__container {
+    position: relative;
+    width: 1920px;
+    padding-top: 96px;
+    padding-right: 375px;
+    padding-left: 975px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 94px;
+      left: 196px;
+      width: 665px;
+      height: 487px;
+      background-image: url("../img/feedback-airplane-desktop.png");
+    }
+  }
+
+  .feedback__question {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .feedback__item {
+    width: 270px;
+
+    &--name {
+      margin-right: 30px;
+    }
+
+    &--textarea {
+      width: 570px;
+    }
+
+    &--button {
+      margin-right: 38px;
+    }
+
+    &--checkbox {
+      width: 262px;
     }
   }
 }

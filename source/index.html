@@ -16,8 +16,7 @@
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo logotype">
-        <img src="/img/page-header__logo.svg" width="38" height="38" alt="Smart device логотип"
-          class="logotype__img">
+        <img src="/img/page-header__logo.svg" width="38" height="38" alt="Smart device логотип" class="logotype__img">
         <span class="logotype__container logotype__container--mobile">
           <span class="logotype__company-name logotype__company-name--main">
             Smart Device
@@ -35,13 +34,16 @@
         </button>
         <ul class="main-nav__item site-list">
         </ul>
-        <ul class="main-nav__item contacts">
+        <ul class="main-nav__item main-nav__item--contacts contacts">
           <li class="contatcs__item">
             <a class="contacts__link contacts__link--mail">
               <svg class="contacts__mail" width="26" height="19">
                 <use xlink:href="/img/sprite.svg#contacts-mail"></use>
               </svg>
             </a>
+            <span class="contacts__mail-desktop">
+              info@sd.ru
+            </span>
           </li>
           <li class="contatcs__item">
             <a class="contacts__link contacts__link--phone">
@@ -49,6 +51,12 @@
                 <use xlink:href="/img/sprite.svg#contacts-phone"></use>
               </svg>
             </a>
+            <span class="contacts__number-desktop">
+              +7 (495) 000 52 52
+            </span>
+            <button class="contacts__back-call button">
+              Заказать звонок
+            </button>
           </li>
         </ul>
       </nav>
@@ -122,9 +130,15 @@
           Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
           года. Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
-        <p class="about-us__description">
+        <p class="about-us__description about-us__description--small">
           Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
           платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..
+        </p>
+        <p class="about-us__description about-us__description--desktop">
+          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+          светотехники России.
         </p>
         <button class="about-us__button button">
           Подробнее
@@ -196,10 +210,9 @@
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__copyrigth-container">
+      <div class="footer__item-container footer__item-container--copyright">
         <a href="" class="logotype">
-          <img src="/img/page-header__logo.svg" width="52" height="52" alt="Smart device логотип"
-            class="logotype__img">
+          <img src="/img/page-header__logo.svg" width="52" height="52" alt="Smart device логотип" class="logotype__img">
           <span class="logotype__container">
             <span class="logotype__company-name">
               Service Device
@@ -209,7 +222,7 @@
             </span>
           </span>
         </a>
-        <p class="footer__copyrigth">
+        <p class="footer__copyright footer__copyright--mobile">
           1999-2018 SD Service Devices
         </p>
         <ul class="footer__social-list social">
@@ -249,7 +262,7 @@
         <b class="footer__item-headline footer__item-open">
           Разделы сайта
         </b>
-        <ul class="footer__list">
+        <ul class="footer__list footer__list--site-list">
           <li class="footer__item">
             <a class="footer__link">
               О компании
@@ -307,6 +320,12 @@
         </ul>
       </div>
       <div class="footer__item-container footer__item-container--information">
+        <p class="footer__all-rights-reserved">
+          Все права защищены
+        </p>
+        <p class="footer__copyright footer__copyright--desktop">
+          1999-2018 SD Service Devices
+        </p>
         <a class="footer__condition">
           Условия конфиденциальности
         </a>
