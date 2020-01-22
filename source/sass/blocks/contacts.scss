@@ -7,6 +7,10 @@
 .contatcs__item {
   margin-right: 23px;
 
+  &--mail {
+    margin-top: 3px;
+  }
+
   &:nth-child(2n) {
     margin-right: 0;
   }
