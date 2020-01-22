@@ -28,3 +28,12 @@
     width: 202px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    width: 1920px;
+    padding-top: 33px;
+    padding-right: 256px;
+    padding-left: 253px;
+  }
+}

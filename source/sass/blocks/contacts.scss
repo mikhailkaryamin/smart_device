@@ -1,6 +1,5 @@
 .contacts {
   display: flex;
-  margin: 0;
   padding-left: 27px;
   list-style: none;
 }
@@ -11,6 +10,12 @@
   &:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+.contacts__number-desktop,
+.contacts__mail-desktop,
+.contacts__back-call {
+  display: none;
 }
 
 .contacts__link {
@@ -25,5 +30,48 @@
   &--phone {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__number-desktop,
+  .contacts__mail-desktop,
+  .contacts__back-call {
+    display: inline-block;
+  }
+
+  .contacts__number-desktop,
+  .contacts__mail-desktop {
+    font-family: "PT Mono", monospace;
+    color: #ffffff;
+    line-height: 18px;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+  }
+
+  .contatcs__item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__mail-desktop {
+    padding-left: 20px;
+  }
+
+  .contacts__number-desktop {
+    padding-left: 16px;
+  }
+
+  .contacts__back-call {
+    margin-left: 40px;
+    padding: 14px 24px;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent;
   }
 }

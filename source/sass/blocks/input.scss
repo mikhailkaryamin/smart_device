@@ -8,6 +8,8 @@
   background-color: #19baff;
 
   @include placeholder {
+    font-family: "PT Mono", monospace;
     color: #ffffff;
+    line-height: 22px;
   }
 }

@@ -9,12 +9,13 @@
   background-color: #19baff;
 
   @include placeholder {
+    font-family: "PT Mono", monospace;
     color: #ffffff;
   }
 }
 
 @media (min-width: $tablet-width) {
   .textarea {
-    min-height: 160px;
+    height: 100%;
   }
 }
