@@ -208,10 +208,12 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
     &::before {
       content: "";
       position: absolute;
+      left: 0;
       transform: rotate(45deg);
       width: 23px;
       height: 1px;
@@ -221,6 +223,7 @@
     &::after {
       content: "";
       position: absolute;
+      left: 0;
       transform: rotate(-45deg);
       width: 23px;
       height: 1px;
