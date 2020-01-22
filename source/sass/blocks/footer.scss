@@ -6,6 +6,8 @@
 }
 
 .footer__copyright {
+  margin: 0;
+  padding: 25px 0;
   font-family: "PT Mono", monospace;
   color: #1b2d37;
   font-size: 13px;
@@ -24,8 +26,8 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-right: 25px;
+  padding-top: 29px;
+  padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 15px;
   border-top: 1px solid #dcdddc;
@@ -41,13 +43,21 @@
   &--copyright {
     align-items: center;
     padding-top: 45px;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
+  }
+
+  &--site-list {
+    padding-top: 29px;
+  }
+
+  &--contacts {
+    padding-bottom: 25px;
   }
 }
 
 .footer__item-headline {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   color: #1b2d37;
   font-size: 15px;
   font-weight: 400;
@@ -89,7 +99,6 @@
 }
 
 .footer__item {
-  margin-bottom: 5px;
   font-family: "PT Mono", monospace;
   color: #1b2d37;
   font-size: 15px;
@@ -101,12 +110,16 @@
   }
 }
 
+.footer__social-list {
+  margin-top: 7px;
+}
+
 .footer__link {
   cursor: pointer;
 }
 
 .footer__condition {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .footer__condition,
@@ -114,6 +127,7 @@
   font-family: "PT Mono", monospace;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   opacity: 0.5;
 }

@@ -5,15 +5,16 @@
 .services__container {
   width: 320px;
   margin: 0 auto;
-  padding-top: 53px;
+  padding-top: 50px;
   padding-right: 15px;
-  padding-bottom: 53px;
+  padding-bottom: 64px;
   padding-left: 15px;
 }
 
 .services__label {
   display: block;
-  padding-left: 15px;
+  margin-bottom: 42px;
+  padding-left: 10px;
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
@@ -34,7 +35,7 @@
   flex-direction: column;
   min-height: 256px;
   margin-bottom: 30px;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-left: 35px;
   color: #ffffff;
   font-size: 20px;
