@@ -436,16 +436,20 @@ a {
   background-color: #19baff; }
   .input::-webkit-input-placeholder {
     font-family: "PT Mono", monospace;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 22px; }
   .input:-moz-placeholder {
     font-family: "PT Mono", monospace;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 22px; }
   .input::-moz-placeholder {
     font-family: "PT Mono", monospace;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 22px; }
   .input:-ms-input-placeholder {
     font-family: "PT Mono", monospace;
-    color: #ffffff; }
+    color: #ffffff;
+    line-height: 22px; }
 
 .textarea {
   width: 100%;
@@ -471,7 +475,7 @@ a {
 
 @media (min-width: 770px) {
   .textarea {
-    min-height: 160px; } }
+    height: 100%; } }
 
 .checkbox {
   position: relative;
@@ -1120,7 +1124,7 @@ a {
   padding-bottom: 33px;
   padding-left: 15px; }
 
-.feedback__question {
+.feedback__headline {
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
@@ -1156,11 +1160,13 @@ a {
     margin-bottom: 0; }
 
 @media (min-width: 770px) {
+  .feedback--modal {
+    display: none; }
   .feedback__container {
     width: 770px;
     padding-top: 83px;
     padding-left: 88px; }
-  .feedback__question {
+  .feedback__headline {
     font-size: 32px;
     line-height: 45px; }
   .feedback__text {
@@ -1182,6 +1188,13 @@ a {
     margin-right: 39px; } }
 
 @media (min-width: 1920px) {
+  .feedback--modal {
+    position: fixed;
+    top: calc(50% - 302px);
+    left: calc(50% - 245px);
+    display: block;
+    width: 490px;
+    height: 605px; }
   .feedback__container {
     position: relative;
     width: 1920px;
@@ -1196,19 +1209,71 @@ a {
       width: 665px;
       height: 487px;
       background-image: url("../img/feedback-airplane-desktop.png"); }
-  .feedback__question {
+    .feedback__container--modal {
+      position: fixed;
+      width: 490px;
+      height: 605px;
+      padding: 35px 40px; }
+      .feedback__container--modal::before {
+        display: none; }
+  .feedback__headline {
     font-size: 36px;
     line-height: 51px; }
+    .feedback__headline--modal {
+      margin-bottom: 25px;
+      font-size: 28px;
+      line-height: 39px; }
+  .feedback__text--modal {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 22px; }
   .feedback__item {
     width: 270px; }
     .feedback__item--name {
       margin-right: 30px; }
     .feedback__item--textarea {
-      width: 570px; }
+      width: 570px;
+      height: 160px; }
     .feedback__item--button {
       margin-right: 38px; }
     .feedback__item--checkbox {
-      width: 262px; } }
+      width: 262px; }
+    .feedback__item--modal {
+      width: 412px; }
+    .feedback__item--textarea-modal {
+      height: 104px; }
+    .feedback__item--checkbox-modal {
+      width: 385px; }
+  .feedback__form--modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .feedback__button-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: none;
+    background-color: transparent; }
+    .feedback__button-close::before {
+      content: "";
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      width: 23px;
+      height: 1px;
+      background-color: #ffffff; }
+    .feedback__button-close::after {
+      content: "";
+      position: absolute;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      width: 23px;
+      height: 1px;
+      background-color: #ffffff; } }
 
 .footer__container {
   display: -webkit-box;
@@ -1439,5 +1504,19 @@ a {
   margin-right: 15px; }
   .socials__item:nth-child(3n) {
     margin-right: 0; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal--show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /*# sourceMappingURL=style.css.map */

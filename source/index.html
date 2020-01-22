@@ -179,7 +179,7 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="feedback__container">
-        <b class="feedback__question">
+        <b class="feedback__headline">
           Остались вопросы? Задайте их нам!
         </b>
         <span class="feedback__text">
@@ -335,7 +335,44 @@
       </div>
     </div>
   </footer>
-
+  <div class="modal modal--show">
+    <section class="feedback feedback--modal">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__container feedback__container--modal">
+        <button class="feedback__button-close">
+          <span class="visually-hidden">
+            Закрыть окно
+          </span>
+        </button>
+        <b class="feedback__headline feedback__headline--modal">
+          Закажите звонок
+        </b>
+        <span class="feedback__text feedback__text--modal">
+          Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+        </span>
+        <form method="GET" class="feedback__form feedback__form--modal">
+          <label class="feedback__item feedback__item--modal feedback__item--name">
+            <input type="text" name="name" class="input input--name" placeholder="Имя">
+          </label>
+          <label class="feedback__item feedback__item--modal feedback__item--number">
+            <input type="number" name="number" class="input input--number" placeholder="Телефон">
+          </label>
+          <label class="feedback__item feedback__item--modal feedback__item--textarea feedback__item--textarea-modal">
+            <textarea name="question" class="textarea" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button class="feedback__item feedback__item--modal feedback__item--button button">
+            Задать вопрос
+          </button>
+          <label class="feedback__item feedback__item--modal feedback__item--checkbox-modal feedback__item--checkbox checkbox">
+            <input type="checkbox" class="visually-hidden checkbox__input" name="personal data processing" checked
+              required>
+            <span class="checkbox__item"></span>
+            Я согласен на обработку персональных данных
+          </label>
+        </form>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>

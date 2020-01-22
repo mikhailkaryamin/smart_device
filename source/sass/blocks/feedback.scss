@@ -13,7 +13,7 @@
   padding-left: 15px;
 }
 
-.feedback__question {
+.feedback__headline {
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
@@ -54,13 +54,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    &--modal {
+      display: none;
+    }
+  }
+
   .feedback__container {
     width: 770px;
     padding-top: 83px;
     padding-left: 88px;
   }
 
-  .feedback__question {
+  .feedback__headline {
     font-size: 32px;
     line-height: 45px;
   }
@@ -95,6 +101,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    &--modal {
+      position: fixed;
+      top: calc(50% - 302px);
+      left: calc(50% - 245px);
+      display: block;
+      width: 490px;
+      height: 605px;
+    }
+  }
+
   .feedback__container {
     position: relative;
     width: 1920px;
@@ -111,11 +128,36 @@
       height: 487px;
       background-image: url("../img/feedback-airplane-desktop.png");
     }
+
+    &--modal {
+      position: fixed;
+      width: 490px;
+      height: 605px;
+      padding: 35px 40px;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
-  .feedback__question {
+  .feedback__headline {
     font-size: 36px;
     line-height: 51px;
+
+    &--modal {
+      margin-bottom: 25px;
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  .feedback__text {
+    &--modal {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   .feedback__item {
@@ -127,6 +169,7 @@
 
     &--textarea {
       width: 570px;
+      height: 160px;
     }
 
     &--button {
@@ -135,6 +178,53 @@
 
     &--checkbox {
       width: 262px;
+    }
+
+    &--modal {
+      width: 412px;
+    }
+
+    &--textarea-modal {
+      height: 104px;
+    }
+
+    &--checkbox-modal {
+      width: 385px;
+    }
+  }
+
+  .feedback__form {
+    &--modal {
+      flex-direction: column;
+    }
+  }
+
+  .feedback__button-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      transform: rotate(45deg);
+      width: 23px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      transform: rotate(-45deg);
+      width: 23px;
+      height: 1px;
+      background-color: #ffffff;
     }
   }
 }
