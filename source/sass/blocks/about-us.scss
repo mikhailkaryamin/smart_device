@@ -53,11 +53,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 9px;
-      left: 0;
+      top: 18px;
+      left: 28px;
       width: 252px;
       height: 362px;
       background-image: url("../img/about-us__year.png");
+      background-repeat: no-repeat;
     }
   }
 
@@ -87,6 +88,23 @@
 @media (min-width: $desktop-width) {
   .about-us__container {
     width: 1200px;
+    padding-top: 62px;
+    padding-bottom: 109px;
+    padding-left: 193px;
+
+    &::before {
+      top: 73px;
+      left: 16px;
+      width: 115px;
+      height: 305px;
+      background-image: url("../img/about-us__year-desktop.png");
+    }
+  }
+
+  .about-us__headline {
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 51px;
   }
 
   .about-us__description {
@@ -97,5 +115,9 @@
     &--desktop {
       display: block;
     }
+  }
+
+  .about-us__button {
+    margin-top: 29px;
   }
 }

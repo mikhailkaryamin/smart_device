@@ -101,7 +101,7 @@
       background-image: url("../img/printed-boards-bg-tablet.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: -363px -4px;
+      background-position: center;
     }
   }
 
@@ -151,9 +151,10 @@
 
 @media (min-width: $desktop-width) {
   .printed-boards {
-    min-height: 796px;
+    min-height: 788px;
 
     &::before {
+      top: -92px;
       height: 878px;
       background-image: url("../img/printed-boards-bg-desktop.jpg");
     }
@@ -162,8 +163,11 @@
   .printed-boards__bg {
     top: 180px;
     height: 515px;
+    overflow: visible;
 
     &::before {
+      top: -13px;
+      left: calc(50% + 77px);
       width: 707px;
       height: 515px;
       background-image: url("../img/printed-board-desktop.png");
@@ -171,9 +175,9 @@
   }
 
   .printed-boards__container {
-    width: 1920px;
-    padding-top: 259px;
-    padding-left: 249px;
+    width: 1900px;
+    padding-top: 224px;
+    padding-left: 239px;
   }
 
   .printed-boards__headline {
@@ -184,7 +188,9 @@
 
   .printed-boards__description {
     width: 770px;
-    padding-left: 94px;
+    padding-top: 27px;
+    padding-bottom: 44px;
+    padding-left: 98px;
     font-size: 22px;
     line-height: 34px;
 
@@ -194,6 +200,8 @@
   }
 
   .printed-boards__button {
-    margin-left: 95px;
+    margin-left: 97px;
+    padding-right: 44px;
+    padding-left: 47px;
   }
 }
