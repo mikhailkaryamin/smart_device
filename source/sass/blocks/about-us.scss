@@ -46,12 +46,14 @@
     position: relative;
     width: 770px;
     min-height: 370px;
+    padding-top: 11px;
+    padding-bottom: 83px;
     padding-left: 213px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 9px;
       left: 0;
       width: 252px;
       height: 362px;
@@ -60,17 +62,19 @@
   }
 
   .about-us__headline {
+    margin-bottom: 16px;
     font-size: 32px;
     line-height: 45px;
   }
 
   .about-us__description {
     padding-top: 10px;
+    padding-right: 7px;
     padding-bottom: 10px;
   }
 
   .about-us__button {
-    margin-top: 30px;
+    margin-top: 22px;
     padding-top: 14px;
     padding-right: 50px;
     padding-bottom: 14px;

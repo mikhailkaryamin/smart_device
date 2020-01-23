@@ -1,6 +1,6 @@
 .textarea {
   width: 100%;
-  min-height: 104px;
+  height: 100%;
   padding-top: 17px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -11,11 +11,5 @@
   @include placeholder {
     font-family: "PT Mono", monospace;
     color: #ffffff;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .textarea {
-    height: 100%;
   }
 }
