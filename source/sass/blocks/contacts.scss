@@ -58,28 +58,57 @@
 
   .contacts {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 660px;
   }
 
   .contatcs__item {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+
+    &--mail {
+      margin-top: 0;
+      margin-right: 86px;
+      padding-top: 17px;
+    }
+  }
+
+  .contacts__mail {
+    width: 19px;
+    height: 14px;
+  }
+
+  .contacts__phone {
+    width: 18px;
+    height: 18px;
   }
 
   .contacts__mail-desktop {
-    padding-left: 20px;
+    padding-left: 14px;
+  }
+
+  .contacts__link {
+    &--phone {
+      margin-top: 17px;
+    }
   }
 
   .contacts__number-desktop {
-    padding-left: 16px;
+    padding-top: 17px;
+    padding-left: 13px;
   }
 
   .contacts__back-call {
-    margin-left: 40px;
-    padding: 14px 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    margin-left: 48px;
+    padding-top: 14px;
+    padding-right: 26px;
+    padding-bottom: 14px;
+    padding-left: 26px;
     color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
     border-color: #ffffff;
     background-color: transparent;
   }
