@@ -1,6 +1,5 @@
 .contacts {
   display: flex;
-  padding-left: 27px;
   list-style: none;
 }
 
@@ -34,6 +33,12 @@
   &--phone {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contatcs__item {
+    margin-right: 31px;
   }
 }
 

@@ -424,6 +424,9 @@ a {
 @media (min-width: 770px) {
   .logotype__container--mobile {
     display: block; }
+  .logotype__img {
+    width: 52px;
+    height: 52px; }
   .logotype__company-name--main {
     color: #ffffff; } }
 
@@ -454,7 +457,7 @@ a {
 
 .textarea {
   width: 100%;
-  min-height: 104px;
+  height: 100%;
   padding-top: 17px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -473,10 +476,6 @@ a {
   .textarea:-ms-input-placeholder {
     font-family: "PT Mono", monospace;
     color: #ffffff; }
-
-@media (min-width: 770px) {
-  .textarea {
-    height: 100%; } }
 
 .checkbox {
   position: relative;
@@ -538,9 +537,9 @@ a {
   width: 320px;
   min-height: 80px;
   margin: 0 auto;
-  padding-top: 17px;
-  padding-right: 15px;
-  padding-left: 17px; }
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 24px; }
 
 .page-header__logo {
   width: 38px; }
@@ -587,7 +586,15 @@ a {
             box-shadow: 0 12px 0 0 #ffffff; }
 
 .main-nav__item--contacts {
-  margin: 0; }
+  margin: 0;
+  padding-left: 27px; }
+
+@media (min-width: 770px) {
+  .main-nav {
+    width: 157px;
+    padding-top: 13px; }
+  .main-nav__item--contacts {
+    padding-left: 37px; } }
 
 @media (min-width: 1920px) {
   .main-nav {
@@ -605,7 +612,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 27px;
   list-style: none; }
 
 .contatcs__item {
@@ -629,6 +635,10 @@ a {
   .contacts__link--phone {
     width: 24px;
     height: 24px; }
+
+@media (min-width: 770px) {
+  .contatcs__item {
+    margin-right: 31px; } }
 
 @media (min-width: 1920px) {
   .contacts__number-desktop,
@@ -757,18 +767,19 @@ a {
       height: 686px;
       background-image: url("../img/printed-boards-bg-tablet.jpg");
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: -363px -4px; }
   .printed-boards__bg {
     top: 35px;
     height: 340px; }
     .printed-boards__bg::before {
-      left: calc(50% + 106px);
+      left: calc(50% + 126px);
       width: 465px;
       height: 340px;
       background-image: url("../img/printed-board-tablet.png"); }
   .printed-boards__container {
     width: 770px;
-    padding-top: 118px;
+    padding-top: 108px;
     padding-left: 88px; }
   .printed-boards__headline {
     width: 470px;
@@ -776,10 +787,16 @@ a {
     line-height: 70px; }
   .printed-boards__description {
     width: 405px;
+    padding-top: 29px;
+    padding-bottom: 55px;
     font-size: 18px;
     line-height: 28px; }
+    .printed-boards__description::before {
+      top: 45px; }
   .printed-boards__button {
-    margin-left: 48px;
+    margin-left: 52px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     border: none; } }
 
 @media (min-width: 1920px) {
@@ -898,17 +915,26 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 770px;
+    padding-top: 53px;
     padding-right: 25px;
+    padding-bottom: 15px;
     padding-left: 25px; }
   .advantages__item {
     width: 345px;
+    min-height: 232px;
     margin-right: 30px;
     margin-bottom: 30px;
+    padding-top: 66px;
+    padding-right: 20px;
+    padding-bottom: 19px;
     background-color: #ffffff; }
     .advantages__item:nth-child(even) {
       margin-right: 0; }
     .advantages__item:last-child {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .advantages__headline-item {
+    font-size: 24px;
+    line-height: 34px; } }
 
 @media (min-width: 1920px) {
   .advantages__list {
@@ -975,23 +1001,27 @@ a {
     position: relative;
     width: 770px;
     min-height: 370px;
+    padding-top: 11px;
+    padding-bottom: 83px;
     padding-left: 213px; }
     .about-us__container::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 9px;
       left: 0;
       width: 252px;
       height: 362px;
       background-image: url("../img/about-us__year.png"); }
   .about-us__headline {
+    margin-bottom: 16px;
     font-size: 32px;
     line-height: 45px; }
   .about-us__description {
     padding-top: 10px;
+    padding-right: 7px;
     padding-bottom: 10px; }
   .about-us__button {
-    margin-top: 30px;
+    margin-top: 22px;
     padding-top: 14px;
     padding-right: 50px;
     padding-bottom: 14px;
@@ -1091,16 +1121,17 @@ a {
   .services__container {
     width: 770px;
     padding-right: 25px;
+    padding-bottom: 79px;
     padding-left: 25px; }
   .services__label {
     width: 615px;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
     padding-left: 0;
     font-size: 32px;
     line-height: 45px; }
   .services__item {
     margin-bottom: 46px;
-    padding-top: 43px;
+    padding-top: 41px;
     padding-left: 44px; }
     .services__item--production {
       background-image: url("../img/services__production-tablet.jpg"); }
@@ -1190,6 +1221,8 @@ a {
     font-family: "PT Mono", monospace;
     font-size: 14px;
     line-height: 16px; }
+  .feedback__item--textare {
+    height: 104px; }
   .feedback__item:last-child {
     margin-bottom: 0; }
 
@@ -1198,28 +1231,38 @@ a {
     display: none; }
   .feedback__container {
     width: 770px;
-    padding-top: 83px;
+    padding-top: 81px;
+    padding-bottom: 62px;
     padding-left: 88px; }
   .feedback__headline {
     font-size: 32px;
     line-height: 45px; }
   .feedback__text {
-    margin-bottom: 50px; }
+    margin-bottom: 54px;
+    margin-left: 5px; }
   .feedback__form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .feedback__item--name, .feedback__item--number {
-    width: 280px; }
-  .feedback__item--name {
-    margin-right: 32px; }
-  .feedback__item--textarea {
-    width: 590px; }
-  .feedback__item--button {
-    margin-right: 39px; } }
+        flex-wrap: wrap;
+    margin-left: 4px; }
+  .feedback__item {
+    margin-bottom: 42px; }
+    .feedback__item--name, .feedback__item--number {
+      width: 280px; }
+    .feedback__item--name {
+      margin-right: 32px; }
+    .feedback__item--textarea {
+      width: 590px;
+      height: 160px;
+      margin-bottom: 44px; }
+    .feedback__item--button {
+      width: 280px;
+      margin-right: 39px; }
+    .feedback__item--checkbox {
+      padding-top: 8px; } }
 
 @media (min-width: 1920px) {
   .feedback--modal {
@@ -1312,6 +1355,9 @@ a {
       height: 1px;
       background-color: #ffffff; } }
 
+.footer {
+  background-color: #fafafa; }
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,8 +1390,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
   padding-top: 29px;
   padding-right: 15px;
   padding-bottom: 20px;
@@ -1458,6 +1502,7 @@ a {
   .footer__item-container {
     position: relative;
     margin: 0;
+    padding-right: 0;
     padding-left: 0;
     border: none; }
     .footer__item-container--copyright, .footer__item-container--information {
@@ -1472,17 +1517,34 @@ a {
       .footer__item-container--copyright::before, .footer__item-container--information::before {
         content: "";
         position: absolute;
-        bottom: 0;
         left: -25px;
         display: block;
         width: 770px;
         height: 1px;
         background-color: #dcdddc; }
-    .footer__item-container--site-list {
-      width: 50%; }
+    .footer__item-container--site-list, .footer__item-container--contacts {
+      width: 50%;
+      padding-top: 38px;
+      padding-bottom: 36px; }
+    .footer__item-container--copyright {
+      padding-top: 7px;
+      padding-bottom: 13px; }
+      .footer__item-container--copyright::before {
+        bottom: 0; }
     .footer__item-container--contacts {
-      width: 50%; }
-  .footer__item-headline::before {
+      padding-left: 15px; }
+    .footer__item-container--information {
+      padding-top: 22px; }
+      .footer__item-container--information::before {
+        top: 0; }
+  .footer__copyright {
+    padding-top: 28px;
+    padding-left: 14px; }
+  .footer__item-headline {
+    margin-bottom: 25px; }
+    .footer__item-headline::before {
+      display: none; }
+  .footer__item br {
     display: none; }
   .footer__condition {
     margin-bottom: 0; } }

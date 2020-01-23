@@ -52,6 +52,10 @@
     line-height: 16px;
   }
 
+  &--textare {
+    height: 104px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -66,7 +70,8 @@
 
   .feedback__container {
     width: 770px;
-    padding-top: 83px;
+    padding-top: 81px;
+    padding-bottom: 62px;
     padding-left: 88px;
   }
 
@@ -76,15 +81,19 @@
   }
 
   .feedback__text {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
+    margin-left: 5px;
   }
 
   .feedback__form {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 4px;
   }
 
   .feedback__item {
+    margin-bottom: 42px;
+
     &--name,
     &--number {
       width: 280px;
@@ -96,10 +105,17 @@
 
     &--textarea {
       width: 590px;
+      height: 160px;
+      margin-bottom: 44px;
     }
 
     &--button {
+      width: 280px;
       margin-right: 39px;
+    }
+
+    &--checkbox {
+      padding-top: 8px;
     }
   }
 }

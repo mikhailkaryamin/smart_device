@@ -101,6 +101,7 @@
       background-image: url("../img/printed-boards-bg-tablet.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: -363px -4px;
     }
   }
 
@@ -109,7 +110,7 @@
     height: 340px;
 
     &::before {
-      left: calc(50% + 106px);
+      left: calc(50% + 126px);
       width: 465px;
       height: 340px;
       background-image: url("../img/printed-board-tablet.png");
@@ -118,7 +119,7 @@
 
   .printed-boards__container {
     width: 770px;
-    padding-top: 118px;
+    padding-top: 108px;
     padding-left: 88px;
   }
 
@@ -130,12 +131,20 @@
 
   .printed-boards__description {
     width: 405px;
+    padding-top: 29px;
+    padding-bottom: 55px;
     font-size: 18px;
     line-height: 28px;
+
+    &::before {
+      top: 45px;
+    }
   }
 
   .printed-boards__button {
-    margin-left: 48px;
+    margin-left: 52px;
+    padding-top: 18px;
+    padding-bottom: 17px;
     border: none;
   }
 }

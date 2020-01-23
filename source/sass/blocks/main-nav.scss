@@ -30,6 +30,20 @@
 .main-nav__item {
   &--contacts {
     margin: 0;
+    padding-left: 27px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 157px;
+    padding-top: 13px;
+  }
+
+  .main-nav__item {
+    &--contacts {
+      padding-left: 37px;
+    }
   }
 }
 
