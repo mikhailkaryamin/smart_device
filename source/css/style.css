@@ -1446,7 +1446,8 @@ a {
   padding-right: 15px;
   padding-bottom: 20px;
   padding-left: 15px;
-  border-top: 1px solid #dcdddc; }
+  border-top: 1px solid #dcdddc;
+  overflow: hidden; }
   .footer__item-container--information {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1466,35 +1467,17 @@ a {
             align-items: center;
     padding-top: 45px;
     padding-bottom: 48px; }
-  .footer__item-container--site-list {
-    padding-top: 29px; }
-  .footer__item-container--contacts {
-    padding-bottom: 25px; }
+  .footer__item-container--site-list, .footer__item-container--contacts {
+    padding-bottom: 29px; }
 
 .footer__item-headline {
   position: relative;
-  margin-bottom: 33px;
   color: #1b2d37;
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
-  .footer__item-headline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 16px;
-    height: 16px; }
-
-.footer__item-close::before {
-  background-image: url("../img/footer__plus.svg"); }
-
-.footer__item-open::before {
-  top: 7px;
-  background-image: url("../img/footer__minus.svg");
-  background-repeat: no-repeat; }
 
 .footer__list {
   display: -webkit-box;
@@ -1509,6 +1492,27 @@ a {
   margin: 0;
   padding-left: 0;
   list-style: none; }
+  .footer__list--site-list, .footer__list--contacts {
+    position: relative;
+    display: none;
+    padding-top: 33px; }
+
+.footer__item-container:hover > .footer__list {
+  display: block;
+  -webkit-animation: 1s ease-in-out 0s 1 alternate open_menu;
+          animation: 1s ease-in-out 0s 1 alternate open_menu; }
+
+@-webkit-keyframes open_menu {
+  from {
+    margin-left: -50%; }
+  to {
+    margin-left: 0%; } }
+
+@keyframes open_menu {
+  from {
+    margin-left: -50%; }
+  to {
+    margin-left: 0%; } }
 
 .footer__item {
   font-family: "PT Mono", monospace;
@@ -1590,6 +1594,12 @@ a {
       padding-top: 22px; }
       .footer__item-container--information::before {
         top: 0; }
+  .footer__list--site-list, .footer__list--contacts {
+    display: block;
+    padding-top: 0; }
+  .footer__item-container:hover > .footer__list {
+    -webkit-animation: none;
+            animation: none; }
   .footer__copyright {
     padding-top: 28px;
     padding-left: 14px; }
